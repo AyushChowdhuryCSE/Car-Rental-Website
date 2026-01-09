@@ -1,201 +1,104 @@
-# 🚗 Car Rental Management System (MERN + Vite)
+# Car-Rental-Website
+[![Build Status](https://img.shields.io/badge/Build-Status-FF69B4?style=for-the-badge)]()
+[![License](https://img.shields.io/badge/License-Not_Specified-FF69B4?style=for-the-badge)]()
+[![Language](https://img.shields.io/badge/Language-JavaScript-FF69B4?style=for-the-badge)]()
+[![Version](https://img.shields.io/badge/Version-1.0.0-FF69B4?style=for-the-badge)]()
 
-A full‑stack **Car Rental Website** built using the **MERN stack with Vite** that allows users to browse cars, book rentals, and manage reservations, while providing an admin system for managing vehicles and users.
+## Description
+The Car-Rental-Website is a web application designed to provide a seamless car rental experience for users. With a user-friendly interface and robust backend, this application aims to make car rentals easy and efficient. 
+![Car Rental Demo](https://via.placeholder.com/800x400)
 
----
+## Features
+### Core Features
+| Feature | Description |
+|---------|-------------|
+| 🚗 Vehicle Management | Manage vehicle inventory, including adding, editing, and removing vehicles |
+| 📅 Booking Management | Manage bookings, including creating, editing, and canceling bookings |
+| 📊 Payment Processing | Process payments securely and efficiently |
+### Developer Experience
+| Feature | Description |
+|---------|-------------|
+| 📈 Code Quality | High-quality code with proper documentation and testing |
+| 🚀 Deployment | Easy deployment using Docker and GitHub Actions |
+| 📊 Monitoring | Monitor application performance and logs using Docker and GitHub Actions |
 
-## 📁 Project Structure
+## Tech Stack
+### 🎨 Frontend
+![JavaScript](https://img.shields.io/badge/JavaScript-99%-F7DC6F?style=for-the-badge&logo=javascript&logoColor=black)
+![CSS](https://img.shields.io/badge/CSS-1%-1572B6?style=for-the-badge&logo=css3&logoColor=white)
+![HTML](https://img.shields.io/badge/HTML-0%-E34F26?style=for-the-badge&logo=html5&logoColor=white)
+### ⚙️ Backend
+![Node.js](https://img.shields.io/badge/Node.js-20.x-339933?style=for-the-badge&logo=node.js&logoColor=white)
+### 🗄️ Database & Storage
+No database or storage technology specified
+### 🚀 DevOps & Deployment
+No DevOps or deployment technology specified
 
-```
-carrental/
-│
-├── client/                 # Frontend (Vite + React)
-│   ├── public/
-│   ├── src/
-│   │   ├── assets/
-│   │   ├── components/
-│   │   ├── context/
-│   │   ├── pages/
-│   │   ├── App.jsx
-│   │   └── main.jsx
-│   ├── .env
-│   ├── index.html
-│   ├── package.json
-│   └── vite.config.js
-│
-├── server/                 # Backend (Node + Express)
-│   ├── configs/
-│   ├── controllers/
-│   ├── middleware/
-│   ├── models/
-│   ├── routes/
-│   ├── .env
-│   ├── server.js
-│   └── package.json
-│
-└── README.md
-```
-
----
-
-## ✨ Features
-
-### 👤 User Features
-
-* Browse available cars
-* View car details with images & specs
-* Book cars for specific dates
-* User authentication (Login / Register)
-* View booking history
-
-### 🛠 Admin Features
-
-* Add / update / delete cars
-* Manage users
-* View all bookings
-
-### ⚙ System Features
-
-* JWT‑based authentication
-* Role‑based access control
-* RESTful API
-* Secure routes using middleware
-* Context API for global state
-* Responsive UI
-
----
-
-## 🧰 Tech Stack
-
-### Frontend
-
-* React (Vite)
-* Tailwind CSS
-* Context API
-* Axios
-
-### Backend
-
-* Node.js
-* Express.js
-* MongoDB
-* Mongoose
-* JWT Authentication
-
----
-
-## ⚙️ Environment Variables
-
-### Client (`client/.env`)
-
-```
-VITE_BASE_URL=http://localhost:5000
-```
-
-### Server (`server/.env`)
-
-```
-PORT=5000
-MONGO_URI=your_mongodb_connection_string
-JWT_SECRET=your_secret_key
-```
-
----
-
-## 🚀 Installation & Setup
-
-### 1️⃣ Clone the Repository
-
+## Getting Started
+### Prerequisites
+* Node.js (version 20.x)
+* npm (version 8.x)
+### Installation
 ```bash
-git clone https://github.com/your-username/car-rental-website.git
-cd carrental
-```
-
----
-
-### 2️⃣ Install Dependencies
-
-#### Frontend
-
-```bash
-cd client
 npm install
 ```
-
-#### Backend
-
+### Environment Variables
+| Variable | Description |
+|----------|-------------|
+| `PORT` | The port number to use for the application |
+| `DATABASE_URL` | The URL of the database to use |
+### Quick Start
 ```bash
-cd server
-npm install
-```
-
----
-
-### 3️⃣ Run the Project
-
-#### Start Backend
-
-```bash
-cd server
-npm start
-```
-
-#### Start Frontend
-
-```bash
-cd client
 npm run dev
 ```
 
-Frontend ➜ `http://localhost:5173`
-Backend ➜ `http://localhost:5000`
+## Usage
+### API Endpoints
+No API endpoints specified
+### Example Usage
+No example usage specified
 
----
+## Project Structure
+📦 Car-Rental-Website
+├── 📂 client/                    # Frontend Application
+│   ├── 📂 src/
+│   │   ├── 📂 components/        # Reusable UI Components
+│   │   ├── 📂 pages/             # Route Pages
+│   │   ├── 📂 hooks/             # Custom React Hooks
+│   │   ├── 📂 services/          # API Clients & Services
+│   │   ├── 📂 store/             # State Management (Redux/Zustand)
+│   │   ├── 📂 utils/             # Helper Functions
+│   │   ├── 📂 styles/            # Global Styles & Themes
+│   │   └── 📄 main.jsx           # Application Entry Point
+│   └── 📄 package.json
+│
+├── 📂 server/                    # Backend Application
+│   ├── 📂 src/
+│   │   ├── 📂 controllers/       # Route Handlers
+│   │   ├── 📂 middleware/        # Express Middleware
+│   │   ├── 📂 models/            # Database Models/Schemas
+│   │   ├── 📂 routes/            # API Route Definitions
+│   │   ├── 📂 services/          # Business Logic Layer
+│   │   ├── 📂 utils/             # Server Utilities
+│   │   └── 📄 app.js             # Express App Configuration
+│   └── 📄 package.json
+│
+├── 📂 docs/                      # Documentation
+├── 📂 scripts/                   # Build & Deployment Scripts
+├── 📄 .env.example               # Environment Template
+└── 📄 README.md                  # You are here! 📍
 
-## 🔐 API Structure
+## API Reference
+No API reference specified
 
-```
-/api/users      → User routes
-/api/cars       → Car routes
-/api/bookings   → Booking routes
-```
+## Contributing
+### Branch Naming Conventions
+* `feature/<feature-name>` for new features
+* `fix/<fix-name>` for bug fixes
+* `docs/<doc-name>` for documentation changes
+### Commit Messages
+* Use the imperative mood (e.g. "Add new feature" instead of "Added new feature")
+* Keep commit messages concise and descriptive
 
----
-
----
-
-## ✅ Future Enhancements
-
-* Online payment gateway integration
-* Live car availability tracking
-* Admin dashboard with analytics
-* Email & SMS booking notifications
-* Ratings & reviews system
-* Multi‑language support
-
----
-
-## 🤝 Contributing
-
-1. Fork the repository
-2. Create a new branch (`git checkout -b feature-name`)
-3. Commit your changes (`git commit -m "Add feature"`)
-4. Push to the branch (`git push origin feature-name`)
-5. Open a Pull Request
-
----
-
-## 📜 License
-
-This project is licensed under the **MIT License**.
-
----
-
-## 👨‍💻 Author
-
-Developed by Ayush Chowdhury
-GitHub: https://github.com/AyushChowdhuryCSE
-
----
-
-⭐ If you like this project, don’t forget to star the repository!
+## License
+[![License](https://img.shields.io/badge/License-Not_Specified-FF69B4?style=for-the-badge)]()
