@@ -1,29 +1,32 @@
 <div align="center">
   <h1>🚗 Car-Rental-Website</h1>
-  <p><i>A car rental website built with JavaScript, HTML, and CSS</i></p>
+  <p><i>A web application for car rental services</i></p>
   <p>
     <img src="https://img.shields.io/badge/build-passing-brightgreen?style=for-the-badge" />
     <img src="https://img.shields.io/badge/version-1.0.0-blue?style=for-the-badge" />
     <img src="https://img.shields.io/badge/license-MIT-green?style=for-the-badge" />
-    <img src="https://img.shields.io/badge/language-JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black" />
+    <img src="https://img.shields.io/badge/language-JavaScript-F7DC6F?style=for-the-badge&logo=javascript" />
   </p>
 </div>
 
 <details open>
-  <summary><strong>📖 Table of Contents</strong></summary>
-  - [✨ Features](#-features)
-  - [🏗️ Tech Stack](#️-tech-stack)
-  - [🚀 Getting Started](#-getting-started)
-  - [📖 Usage](#-usage)
-  - [📁 Project Structure](#-project-structure)
-  - [🔌 API Reference](#-api-reference)
-  - [🤝 Contributing](#-contributing)
-  - [📄 License](#-license)
+<summary><b>🗺️ Table of Contents</b></summary>
+
+| Section | Description |
+|:--------|:------------|
+| [✨ Features](#-features) | What this project offers |
+| [🛠️ Tech Stack](#-tech-stack) | Technologies used |
+| [🚀 Getting Started](#-getting-started) | Setup instructions |
+| [📖 Usage](#-usage) | How to use |
+| [📁 Project Structure](#-project-structure) | Codebase organization |
+| [🔌 API Reference](#-api-reference) | Endpoints documentation |
+| [🤝 Contributing](#-contributing) | How to contribute |
+| [📄 License](#-license) | License info |
+
 </details>
 
 ## 📝 Description
-The Car-Rental-Website is a web application designed to facilitate car rentals for users. It provides a platform for users to browse and book cars, and for administrators to manage the car fleet and user bookings. The website is built using JavaScript, HTML, and CSS, and is designed to be user-friendly and responsive.
-
+The Car-Rental-Website is a web application designed to provide a seamless car rental experience for users. It offers a user-friendly interface for browsing and booking cars, as well as a secure payment system. The application is built using modern web technologies and is optimized for performance and scalability.
 > 🎯 **Key Highlights**
 > - ⚡ Fast and lightweight
 > - 🔒 Secure authentication
@@ -37,7 +40,7 @@ The Car-Rental-Website is a web application designed to facilitate car rentals f
 | 📊 | **Analytics** | Real-time dashboard with charts |
 | 🚀 | **Fast API** | Express.js REST API with optimized queries |
 
-## 🏗️ Tech Stack
+## 🛠️ Tech Stack
 ### 🎨 Frontend
 ![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)
 ![Vite](https://img.shields.io/badge/Vite-646CFF?style=for-the-badge&logo=vite&logoColor=white)
@@ -118,11 +121,6 @@ npm run test         # Run test suite
 npm run test:watch   # Watch mode
 ```
 
-```bash
-# Example: Get all users
-curl http://localhost:3000/api/users
-```
-
 ## 📁 Project Structure
 ```text
 📦 project-root
@@ -148,22 +146,19 @@ curl http://localhost:3000/api/users
 │   │   ├── 📂 models/              # Database schemas
 │   │   ├── 📂 routes/              # API routes
 │   │   ├── 📂 services/            # Business logic
-│   │   └── 📄 app.js               # Express config
-│   └── 📄 package.json
-│
-├── 📄 docker-compose.yml           # Container orchestration
-├── 📄 .env.example                 # Environment template
-└── 📄 README.md                    # You are here! 📍
+│   │   ├── 📂 utils/               # Helpers
+│   │   └── 📄 app.js               # App setup
+│   ├── 📄 package.json
+│   └── 📄 .env.example
+├── 📄 README.md
+└── 📄 .gitignore
 ```
 
 ## 🔌 API Reference
 | Method | Endpoint | Description | Auth |
-|:------:|:---------|:------------|:----:|
-| `GET` | `/api/users` | Get all users | ✅ |
-| `POST` | `/api/users` | Create user | ✅ |
-| `GET` | `/api/users/:id` | Get user by ID | ✅ |
-
-> 📚 Full API documentation available at `/api/docs`
+|:-------|:---------|:------------|:----:|
+| ![GET](https://img.shields.io/badge/GET-blue) | `/api/projects` | Get all projects | 🔒 |
+| ![POST](https://img.shields.io/badge/POST-green) | `/api/projects` | Create project | 🔒 |
 
 ## 🤝 Contributing
 Contributions are welcome! 🎉
@@ -183,6 +178,6 @@ Distributed under the MIT License. See `LICENSE` for more information.
 
 ---
 <div align="center">
-  <p>Made with ❤️ by <a href="https://github.com/username">Your Name</a></p>
+  <p>Made with ❤️ by <a href="https://github.com/username">Ayush Chowdhury</a></p>
   <p>⭐ Star this repo if you find it useful!</p>
 </div>
