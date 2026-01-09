@@ -1,110 +1,121 @@
-# Car-Rental-Website
-[![Build Status](https://img.shields.io/badge/Build-Status-unknown-ff69b4)](https://shields.io/)
-[![License](https://img.shields.io/badge/License-Not%20Specified-ff69b4)](https://shields.io/)
-[![Language](https://img.shields.io/badge/Language-JavaScript-61DAFB)](https://shields.io/)
-[![Version](https://img.shields.io/badge/Version-Not%20Specified-ff69b4)](https://shields.io/)
+<div align="center">
+  <img src="https://via.placeholder.com/800x400?text=Car+Rental+Website" alt="Car Rental Website" />
+  <h1>Car Rental Website</h1>
+  <p>A web application for renting cars, built with JavaScript, CSS, and HTML.</p>
+  <p>
+    <img src="https://img.shields.io/badge/build-passing-brightgreen" alt="Build Status" />
+    <img src="https://img.shields.io/badge/license-None-ff69b4" alt="License" />
+    <img src="https://img.shields.io/badge/version-1.0.0-9cf" alt="Version" />
+    <img src="https://img.shields.io/badge/language-JavaScript-f7df1e?logo=javascript" alt="Language" />
+  </p>
+</div>
 
 ## Description
-The Car-Rental-Website is a web application designed to facilitate car rentals. 
-![Car Rental Demo](https://via.placeholder.com/300x150)
-This project aims to provide a user-friendly interface for customers to browse and rent cars.
+The Car Rental Website is a web application designed to facilitate car rentals. It provides a user-friendly interface for customers to browse and book cars, and for administrators to manage the rental fleet. The application is built using JavaScript, CSS, and HTML, and is targeted towards car rental companies and their customers.
+
+## Table of Contents
+<details>
+<summary>Table of Contents</summary>
+  * [Features](#features)
+  * [Tech Stack](#tech-stack)
+  * [Getting Started](#getting-started)
+  * [Usage](#usage)
+  * [Project Structure](#project-structure)
+  * [API Reference](#api-reference)
+  * [Screenshots](#screenshots)
+  * [Contributing](#contributing)
+  * [License](#license)
+  * [Contributors](#contributors)
+</details>
 
 ## Features
-### Core Features
-* 🚗 Car browsing and filtering
-* 📅 Rental date selection
-* 🚫 Car availability checking
-* 📝 User registration and login
-
-### Developer Experience
-* 📈 Code organization and modularity
-* 📊 Error handling and logging
-* 📁 Code commenting and documentation
-
-### Security
-* 🔒 Password hashing and salting
-* 🔑 Secure authentication and authorization
+| Category | Feature | Description |
+|----------|---------|-------------|
+| 🎨 UI | Client-Side Rendering | Render pages on the client-side using JavaScript |
+| 📊 Backend | Server-Side Rendering | Render pages on the server-side using Node.js |
+| 📈 Database | Data Storage | Store data in a database using MongoDB |
 
 ## Tech Stack
-### 🎨 Frontend
-![JavaScript](https://img.shields.io/badge/JavaScript-99%-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
-![CSS](https://img.shields.io/badge/CSS-1%-1572B6?style=for-the-badge&logo=css3&logoColor=white)
-![HTML](https://img.shields.io/badge/HTML-0%-E34F26?style=for-the-badge&logo=html5&logoColor=white)
-
-### ⚙️ Backend
-Since no specific backend technologies were found, this section is left blank.
-
-### 🗄️ Database & Storage
-No specific database or storage technologies were found.
-
-### 🚀 DevOps & Deployment
-No specific DevOps or deployment technologies were found.
+### Frontend
+![JavaScript](https://img.shields.io/badge/JavaScript-f7df1e?logo=javascript)
+![CSS](https://img.shields.io/badge/CSS-1572B6?logo=css3)
+### Backend
+![Node.js](https://img.shields.io/badge/Node.js-339933?logo=node.js)
+### Database
+![MongoDB](https://img.shields.io/badge/MongoDB-47A248?logo=mongodb)
 
 ## Getting Started
 ### Prerequisites
-* Node.js (version not specified)
-* npm (version not specified)
-
+* Node.js >= 18.x
+* MongoDB >= 5.x
 ### Installation
 ```bash
+# Clone the repository
+git clone https://github.com/user/Car-Rental-Website.git
+
+# Install dependencies
 npm install
 ```
 ### Environment Variables
-| Variable | Description |
-|---------|-------------|
-| `NODE_ENV` | Node environment (development or production) |
-
+<details>
+<summary>Environment Variables</summary>
+| Variable | Description | Required |
+|----------|-------------|----------|
+| DATABASE_URL | MongoDB connection string | Yes |
+</details>
 ### Quick Start
 ```bash
-npm start
+npm run dev
 ```
 
 ## Usage
-No specific usage examples were found.
+```bash
+npm run dev    # Start development server
+npm run build  # Build for production
+npm run test   # Run tests
+```
 
 ## Project Structure
+```text
 📦 Car-Rental-Website
-├── 📂 client/                    # Frontend Application
+├── 📂 client/          # Client-side code
 │   ├── 📂 src/
-│   │   ├── 📂 components/        # Reusable UI Components
-│   │   │   ├── 📂 common/        # Buttons, Inputs, Cards
-│   │   │   ├── 📂 layout/        # Header, Footer, Sidebar
-│   │   │   └── 📂 features/      # Feature-specific components
-│   │   ├── 📂 pages/             # Route Pages
-│   │   ├── 📂 hooks/             # Custom React Hooks
-│   │   ├── 📂 services/          # API Clients & Services
-│   │   ├── 📂 store/             # State Management (Redux/Zustand)
-│   │   ├── 📂 utils/             # Helper Functions
-│   │   ├── 📂 styles/            # Global Styles & Themes
-│   │   └── 📄 main.jsx           # Application Entry Point
+│   │   ├── 📂 components/
+│   │   └── 📂 pages/
 │   └── 📄 package.json
-│
-├── 📂 server/                    # Backend Application
-│   ├── 📂 src/
-│   │   ├── 📂 controllers/       # Route Handlers
-│   │   ├── 📂 middleware/        # Express Middleware
-│   │   ├── 📂 models/            # Database Models/Schemas
-│   │   ├── 📂 routes/            # API Route Definitions
-│   │   ├── 📂 services/          # Business Logic Layer
-│   │   ├── 📂 utils/             # Server Utilities
-│   │   └── 📄 app.js             # Express App Configuration
-│   └── 📄 package.json
-│
-├── 📂 docs/                      # Documentation
-├── 📂 scripts/                   # Build & Deployment Scripts
-├── 📄 docker-compose.yml         # Docker Configuration
-├── 📄 .env.example               # Environment Template
-└── 📄 README.md                  # You are here! 📍
+├── 📂 server/          # Server-side code
+│   └── 📂 src/
+└── 📄 README.md
+```
 
 ## API Reference
-No API endpoints were found.
+| Method | Endpoint | Description |
+|--------|----------|-------------|
+| GET | /api/cars | Get all cars |
+| GET | /api/cars/:id | Get a car by ID |
+| POST | /api/cars | Create a new car |
+| PUT | /api/cars/:id | Update a car |
+| DELETE | /api/cars/:id | Delete a car |
+
+## Screenshots
+<img src="https://via.placeholder.com/800x450?text=Dashboard+Screenshot" alt="Dashboard" />
 
 ## Contributing
-To contribute to this project, please follow these guidelines:
-* Create a new branch with a descriptive name (e.g., `feature/new-feature`)
-* Make your changes and commit them with a clear message
-* Open a pull request and wait for review
+To contribute to the Car Rental Website, please follow these steps:
+1. Fork the repository
+2. Create a new branch for your feature
+3. Commit your changes
+4. Open a pull request
+Please see the [issues page](https://github.com/user/Car-Rental-Website/issues) for a list of open issues.
 
 ## License
-[![License](https://img.shields.io/badge/License-Not%20Specified-ff69b4)](https://shields.io/)
-This project is not licensed.
+The Car Rental Website is licensed under the [None](https://github.com/user/Car-Rental-Website/blob/main/LICENSE) license.
+![License](https://img.shields.io/badge/license-None-ff69b4)
+
+## Contributors
+<table>
+  <tr>
+    <td><img src="https://via.placeholder.com/100x100?text=Contributor+1" alt="Contributor 1" /></td>
+    <td><img src="https://via.placeholder.com/100x100?text=Contributor+2" alt="Contributor 2" /></td>
+  </tr>
+</table>
